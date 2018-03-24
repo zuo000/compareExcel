@@ -1,0 +1,39 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="陈淑慧专用" Height="353.922" Width="1030.883">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="43,64,0,0" TextWrapping="Wrap" Text="文件1" VerticalAlignment="Top" RenderTransformOrigin="1.085,0.753"/>
+        <TextBlock HorizontalAlignment="Left" Margin="43,95,0,0" TextWrapping="Wrap" Text="文件2" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextBox_file1" HorizontalAlignment="Left" Height="23" Margin="94,61,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="324" IsEnabled="False"/>
+        <TextBox x:Name="TextBox_file2" HorizontalAlignment="Left" Height="23" Margin="94,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="324" IsEnabled="False"/>
+        <Button Content="浏览" HorizontalAlignment="Left" Margin="445,62,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="浏览" HorizontalAlignment="Left" Margin="445,97,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <ComboBox x:Name="SheetBox1" HorizontalAlignment="Left" Margin="597,62,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.779,0.456" SelectionChanged="SheetBox1_SelectionChanged"/>
+        <ComboBox x:Name="SheetBox2" HorizontalAlignment="Left" Margin="597,98,0,0" VerticalAlignment="Top" Width="95" SelectionChanged="SheetBox2_SelectionChanged"/>
+        <ComboBox x:Name="ColBox1" HorizontalAlignment="Left" Margin="750,62,0,0" VerticalAlignment="Top" Width="94" SelectionChanged="ColBox1_SelectionChanged"/>
+        <ComboBox x:Name="ColBox2" HorizontalAlignment="Left" Margin="750,97,0,0" VerticalAlignment="Top" Width="94" SelectionChanged="ColBox2_SelectionChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="552,65,0,0" TextWrapping="Wrap" Text="sheet" VerticalAlignment="Top" RenderTransformOrigin="1.085,0.753"/>
+        <TextBlock HorizontalAlignment="Left" Margin="552,100,0,0" TextWrapping="Wrap" Text="sheet" VerticalAlignment="Top" RenderTransformOrigin="1.085,0.753"/>
+        <TextBlock HorizontalAlignment="Left" Margin="724,67,0,0" TextWrapping="Wrap" Text="列" VerticalAlignment="Top" RenderTransformOrigin="1.085,0.753"/>
+        <TextBlock HorizontalAlignment="Left" Margin="724,103,0,0" TextWrapping="Wrap" Text="列" VerticalAlignment="Top" RenderTransformOrigin="1.085,0.753"/>
+        <Button x:Name="Compare" Content="比较并保存结果" Margin="413,210,412,60" FontSize="22" FontFamily="Microsoft YaHei" Click="Compare_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="#FFE4350E" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <ComboBox x:Name="ColBox1_1" HorizontalAlignment="Left" Margin="869,62,0,0" VerticalAlignment="Top" Width="96" SelectionChanged="ColBox1_1_SelectionChanged"/>
+        <ComboBox x:Name="ColBox2_1" HorizontalAlignment="Left" Margin="869,97,0,0" VerticalAlignment="Top" Width="96" SelectionChanged="ColBox2_1_SelectionChanged"/>
+        <CheckBox x:Name="Func00" Content="00 功能" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="468,174,0,0" Width="64" Height="16" Checked="Func00_Checked"/>
+
+    </Grid>
+</Window>
